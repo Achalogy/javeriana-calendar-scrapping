@@ -1,0 +1,27 @@
+{
+  "name": "javeriana-calendar-scrapping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npx tsc && node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "dev:icalendar": "concurrently \"npx tsc --watch\" \"nodemon -q dist/generate_icalendar.js\"",
+    "deploy": "npx tsc && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "ical-generator": "^5.0.0",
+    "puppeteer": "^20.7.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.6"
+  }
+}

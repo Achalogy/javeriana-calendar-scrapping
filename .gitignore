@@ -1,0 +1,6 @@
+node_modules
+session
+*.ics
+config.json
+dist
+*-lock.json
