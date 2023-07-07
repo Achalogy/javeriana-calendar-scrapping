@@ -40,7 +40,7 @@ export default (clases: IClase[]) => {
           if (oldEvent) {
             let oldSummary = oldEvent.summary()
 
-            oldEvent.summary(`${clase.component}${clase.component ? " - " : ""}${oldSummary.split(" - ")[1]} | ${detalles.name}`)
+            oldEvent.summary(`${clase.component}${clase.component ? " - " : ""}${oldSummary.split(" - ").at(-1)} | ${detalles.name}`)
           } else {
             cal.createEvent({
               start,
